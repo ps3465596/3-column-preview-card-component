@@ -1,0 +1,247 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --gold: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --green: hsl(179, 100%, 13%);
+
+    --paragraph: hsla(0, 0%, 100%, 0.75);
+    --light: hsl(0, 0%, 95%);
+}
+
+
+/* ---------------- BODY ---------------- */
+
+body {
+    min-height: 100vh;
+    background-color: var(--light);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+
+/* ---------------- CARDS ---------------- */
+
+.cards {
+    display: flex;
+
+    width: 100%;
+    max-width: 57.5rem;
+
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+
+/* ---------------- INDIVIDUAL CARD ---------------- */
+
+.card {
+    flex: 1;
+    min-height: 31.25rem;
+
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* Card colors */
+
+.card-sedans {
+    background-color: var(--gold);
+}
+
+.card-suvs {
+    background-color: var(--cyan);
+}
+
+.card-luxury {
+    background-color: var(--green);
+}
+
+
+/* ---------------- ICON ---------------- */
+
+.car-icon {
+    width: 4rem;
+    height: auto;
+
+    margin-bottom: 2rem;
+}
+
+
+/* ---------------- HEADING ---------------- */
+
+.card h2 {
+    color: var(--light);
+
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    margin-bottom: 1.5rem;
+}
+
+
+/* ---------------- PARAGRAPH ---------------- */
+
+.card p {
+    color: var(--paragraph);
+
+    font-family: "Lexend Deca", sans-serif;
+    font-size: .9375rem;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    max-width: 15rem;
+}
+
+
+/* ---------------- BUTTON ---------------- */
+
+.learn-more {
+    margin-top: auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 9.1rem;
+    height: 3.1rem;
+
+    padding: 0 1.5rem;
+
+    background-color: var(--light);
+
+    border: 2px solid var(--light);
+    border-radius: 2rem;
+
+    text-decoration: none;
+
+    font-family: "Lexend Deca", sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+
+/* Button text color */
+
+.card-sedans .learn-more {
+    color: var(--gold);
+}
+
+.card-suvs .learn-more {
+    color: var(--cyan);
+}
+
+.card-luxury .learn-more {
+    color: var(--green);
+}
+
+
+/* ---------------- HOVER / ACTIVE ---------------- */
+
+.learn-more:hover {
+    background-color: transparent;
+    color: var(--light);
+}
+
+
+/* ---------------- FOOTER ---------------- */
+
+.attribution {
+    margin-top: 2rem;
+
+    font-size: .6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 767px) {
+
+    body {
+        padding: 4rem 1.5rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        max-width: 23.5rem;
+    }
+
+    .card {
+        min-height: 27rem;
+        padding: 3rem;
+    }
+
+    .card h2 {
+        font-size: 2.2rem;
+    }
+
+    .card p {
+        max-width: none;
+    }
+
+    .learn-more {
+        margin-top: 2rem;
+    }
+
+    .attribution {
+        margin-top: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 0.6875rem; 
+    text-align: center; 
+}
+
+    .attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
